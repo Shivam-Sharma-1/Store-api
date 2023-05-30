@@ -13,6 +13,8 @@ app.get("/", (req, res) => {
 	res.send("<h1>Store API</h1><a href='/api/v1/products'>PRoducts</a>");
 });
 
+app.use("/api/v1/products");
+
 app.use(errorHandlerMiddleware);
 app.use(notFound);
 
